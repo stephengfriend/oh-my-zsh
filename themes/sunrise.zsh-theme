@@ -10,12 +10,6 @@ Y=$fg_no_bold[yellow]
 B=$fg_no_bold[blue]
 RESET=$reset_color
 
-if [ "$USER" = "root" ]; then
-    PROMPTCOLOR="%{$R%}" PREFIX="-!-";
-else
-    PROMPTCOLOR="" PREFIX="---";
-fi
-
 local return_code="%(?..%{$R%}%? ↵%{$RESET%})"
 
 # Get the status of the working tree (copied and modified from git.zsh)
